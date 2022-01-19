@@ -47,3 +47,46 @@ h1{
 .display-image.lightbox{
     display: flex;
 }
+.display-image img{
+    width: 600px;
+    max-width: 90%;
+}
+.display-image .close{
+    width: 70px;
+    position: absolute;
+    top: 5%;
+    right: 50%;
+    transform: translateX(50%);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 300px){
+    .display-image .close{
+        top: 10%;
+    }
+}
+
+@media screen and (min-width: 540px){
+    .display-image .close{
+        top: 5%;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .display-image .close{
+        /* top: 10%; */
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .display-image .close{
+        right: 10%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .display-image .close{
+        /* top: 50%; */
+        right: 20%;
+    }
+}

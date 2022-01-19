@@ -4,6 +4,7 @@ const thumbs = document.querySelectorAll('[data-thumb]');
 // ambil elemen display-image dan img
 const displayImgWrap = document.getElementsByClassName('display-image')[0];
 const displayImg = document.querySelector('[data-display-image]');
+const closeBtn = document.querySelector('.close');
 
 // lakukan looping pada elemen2 img
 thumbs.forEach( thumb => thumb.addEventListener('click', e => {
@@ -11,4 +12,4 @@ thumbs.forEach( thumb => thumb.addEventListener('click', e => {
     displayImg.src = e.target.src;
 }))
 
-// ubah attribute src pada  elemen display-image dengan elemen img yang di klik
+closeBtn.addEventListener('click', () => displayImgWrap.classList.remove('lightbox'));
